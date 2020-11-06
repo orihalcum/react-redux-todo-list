@@ -5,9 +5,9 @@ import store from "./store"
 
 const App = () => {
   return (
-    <Provider store={ store }>
+    <Provider store={store}>
       <div>
-        <TodoApp/>
+        <TodoApp />
       </div>
     </Provider>
   );

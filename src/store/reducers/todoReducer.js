@@ -1,12 +1,12 @@
 const initialState = {
   todos: [
     {
-      id: 1,
+      id: Math.random(),
       title: "title one",
       completed: false
     },
     {
-      id: 2,
+      id: Math.random(),
       title: "title two",
       completed: false
     }
@@ -15,8 +15,6 @@ const initialState = {
 
 const todoReducer = (state = initialState, action) => {
   const { type, payload } = action
-  console.log('todoReducer payload', payload)
-  console.log('todoReducer state.todos', state.todos)
   switch (type) {
     case "ADD":
       return {
